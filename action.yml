@@ -1,0 +1,16 @@
+name: "BIMI Checker by PromoPilot"
+description: "Check a domain's BIMI record, SVG Tiny PS logo, mark certificate and DMARC prerequisite."
+author: "Alexandr Krikun"
+branding:
+  icon: "image"
+  color: "purple"
+inputs:
+  args:
+    description: "Arguments passed to the bimi-checker CLI, e.g. \"example.com\""
+    required: true
+runs:
+  using: composite
+  steps:
+    - name: Run bimi-checker
+      shell: bash
+      run: node "$GITHUB_ACTION_PATH/bin/cli.js" ${{ inputs.args }}

@@ -1,0 +1,56 @@
+{
+  "name": "@promopilot/bimi-checker",
+  "version": "1.0.0",
+  "description": "Check BIMI from the command line: the default._bimi record, DMARC enforcement, the SVG Tiny PS logo rules and the VMC/CMC mark certificate (type, subject, expiry). Zero-dependency Node.js CLI, library and GitHub Action. Free online version by PromoPilot.",
+  "keywords": [
+    "bimi",
+    "bimi-checker",
+    "bimi-record",
+    "vmc",
+    "svg-tiny-ps",
+    "brand-indicators",
+    "email-authentication",
+    "email-deliverability",
+    "dmarc",
+    "email-marketing",
+    "dns",
+    "cli",
+    "nodejs",
+    "github-action",
+    "promopilot"
+  ],
+  "homepage": "https://promopilot.link/en/tools/bimi-checker.php?utm_source=github&utm_medium=repo&utm_campaign=tools&utm_content=bimi-checker",
+  "bugs": {
+    "url": "https://github.com/ksanyok/bimi-checker/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksanyok/bimi-checker.git"
+  },
+  "license": "MIT",
+  "author": "Alexandr Krikun (https://github.com/ksanyok)",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "bin": {
+    "bimi-checker": "bin/cli.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

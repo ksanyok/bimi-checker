@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Try the online version
+    url: https://promopilot.link/en/tools/bimi-checker.php?utm_source=github&utm_medium=repo&utm_campaign=tools&utm_content=bimi-checker
+    about: The same check in your browser, no install needed.
+  - name: Questions and ideas
+    url: https://github.com/ksanyok/bimi-checker/discussions
+    about: Ask how to use the tool or share how you use it.

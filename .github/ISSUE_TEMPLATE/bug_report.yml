@@ -1,0 +1,31 @@
+name: Bug report
+description: Something does not work as expected
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you expect, and what did you get instead?
+    validations:
+      required: true
+  - type: input
+    id: command
+    attributes:
+      label: Command or code
+      placeholder: bimi-checker example.com
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Output
+      description: Paste the output (use --json if possible).
+      render: text
+  - type: input
+    id: node
+    attributes:
+      label: Node.js version and OS
+      placeholder: Node 20.11, macOS 14
+    validations:
+      required: true

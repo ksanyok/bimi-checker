@@ -1,0 +1,15 @@
+name: Feature request
+description: Suggest a new check or option
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behaviour
+      description: Example command and the output you would like to see.
